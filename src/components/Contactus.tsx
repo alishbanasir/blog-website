@@ -101,24 +101,25 @@ const Contactus = () => {
                     alt=""
                   />
                 </div>
-                <div className="flex w-full flex-wrap justify-center">
-                  <div className=" bg-[#E2E2E2] shadow-2xl  p-5 rounded-md">
+                <div className="flex w-full flex-wrap  justify-center">
+                  <div className=" bg-[#E2E2E2] shadow-2xl  text-gray-900 p-5 rounded-md">
+                    <div className="mt-5 mb-5">
                     <div className="flex gap-10 justify-center w-full flex-wrap">
                       <div>
-                        <p className="text-[16px] mx-2">Name</p>
+                        <p className="text-[16px] text-gray-900 mx-2">Name</p>
                         <input
                           type="text"
                           required
-                          className="py-2 px-6 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
+                          className="py-2 px-6 text-gray-900 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
                           placeholder="enter your name"
                         />
                       </div>
                       <div>
-                        <p className="text-[16px] mx-2">Email</p>
+                        <p className="text-[16px] text-gray-900 mx-2">Email</p>
                         <input
                           type="email"
                           required
-                          className="py-2 px-6 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
+                          className="py-2 px-6 text-gray-900 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
                           placeholder="enter your email"
                         />
                       </div>
@@ -126,33 +127,33 @@ const Contactus = () => {
 
                     <div className="flex gap-10 mt-5 justify-center w-full  flex-wrap">
                       <div>
-                        <p className="text-[16px] mx-2">Phone</p>
+                        <p className="text-[16px] text-gray-900 mx-2">Phone</p>
                         <input
                           type="number"
                           required
-                          className="py-2 px-6 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
+                          className="py-2 px-6 text-gray-900 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
                           placeholder="enter your Phone No"
                         />
                       </div>
                       <div>
-                        <p className="text-[16px] mx-2">Subject</p>
+                        <p className="text-[16px] text-gray-900 mx-2">Subject</p>
                         <input
                           type="text"
                           required
-                          className="py-2 px-6 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
+                          className="py-2 px-6 text-gray-900 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
                           placeholder="enter your subject"
                         />
                       </div>
                     </div>
                     <form className="mt-5">
                       <fieldset>
-                        <legend className="text-[16px] mx-2 mt-5">
+                        <legend className="text-[16px] text-gray-900 mx-2 mt-5">
                           Message
                         </legend>
                         <textarea
                           placeholder="enter your message"
                           required
-                          className="w-full px-2 py-4 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
+                          className="w-full px-2 py-4 text-gray-900 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
                         ></textarea>
                       </fieldset>
                     </form>
@@ -165,6 +166,7 @@ const Contactus = () => {
                         <Link href="">Send Messages</Link>
                       </button>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>

@@ -21,7 +21,7 @@ export default function Header() {
             >
               &#9776;
             </button>
-            <div className="hidden lg:flex gap-5">
+            <div className="hidden lg:flex gap-7">
               <div className="text-[20px] hover:underline hover:text-[#7C4EE4] font-bold text-gray-900">
                 <Link href="/">Home</Link>
               </div>

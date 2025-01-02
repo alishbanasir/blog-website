@@ -162,20 +162,21 @@ const BlogPost = ({ params }: { params: { content: string } }) => {
 
                 <form className="mt-7">
                   <fieldset>
-                    <legend className="text-[23px] font-bold px-1 mt-5">
+                    <legend className="text-[23px] text-gray-900 font-bold px-1 mt-5">
                       Comments!
                     </legend>
                     <textarea
                       placeholder="Write your comment here..."
                       value={commentText}
                       onChange={(e) => setCommentText(e.target.value)}
-                      className="w-full px-2 py-4 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
+                      className="w-full px-2 text-gray-900 py-4 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
                     ></textarea>
                   </fieldset>
                 </form>
                 <div className="w-full flex mt-5">
                   <button
                     type="button"
+                    disabled ={commentText === ""? true : false}
                     onClick={handleCommentSubmit}
                     className="bg-[#7C4EE4] py-2 px-2 text-white text-[20px] hover:bg-[#E2E2E2] border hover:underline hover:border-[#7C4EE4] hover:text-gray-900 w-24 rounded-lg"
                   >

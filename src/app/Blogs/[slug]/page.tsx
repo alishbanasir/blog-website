@@ -836,21 +836,22 @@ const handleCommentSubmit = () => {
               <div className="max-w-[1440px] h-auto bg-[#E2E2E2] mx-auto">
         <div className="container mx-auto">
     <div className="max-w-5xl mx-auto  space-y-6">
-    <div className="p-8">
+    <div className="p-8 text-gray-900">
 <form>
         <fieldset>
-          <legend className="text-[23px] font-bold px-1">Comments!</legend>
+          <legend className="text-[23px] font-bold text-gray-900 px-1">Comments!</legend>
           <textarea
             placeholder="Write your comment here..."
             value={commentText}
             onChange={(e) => setCommentText(e.target.value)}
-            className="w-full px-2 py-4 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
+            className="w-full text-gray-900 px-2 py-4 rounded-lg border-2 border-[#E2E2E2] bg-[#E2E2E2] shadow-2xl mt-1 focus:outline-none"
           ></textarea>
         </fieldset>
       </form>
       <div className="w-full flex mt-5">
         <button
           type="button"
+          disabled ={commentText === ""? true : false}
           onClick={handleCommentSubmit}
           className="bg-[#7C4EE4] py-2 px-2 text-[20px] text-white hover:bg-[#E2E2E2] border hover:underline hover:border-[#7C4EE4] hover:text-gray-900 w-24 rounded-lg"
         >
