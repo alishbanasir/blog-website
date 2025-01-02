@@ -55,12 +55,12 @@ export default function Hero() {
                   </h2>
                   <h2 className="text-[18px] text-gray-400">16 March 2024</h2>
                 </div>
-                <div className="leading-relaxed text-[15px] mt-3">
+                <div className="leading-relaxed text-gray-900 text-[15px] mt-3">
                   <h1 className="text-[20px] font-bold text-black">
                     How to make a Game look more attractive with New VR & AI
                     Technology
                   </h1>
-                  <p>
+                  <p className="text-gray-900">
                     Virtual Reality (VR) and Artificial Intelligence (AI) are
                     revolutionizing the gaming industry by creating immersive,
                     visually stunning experiences. VR lets players explore

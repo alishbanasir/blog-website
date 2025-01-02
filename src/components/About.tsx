@@ -25,8 +25,8 @@ const About = () => {
   </div>
   <div className="lg:w-4/5  mx-auto flex flex-wrap justify-between px-5 flex-col md:flex-row items-center">
 <div className=" font-extrabold mt-2 title-font md:mb-0 ">
-  <h1 className="text-[25px] font-bold md:ml-auto ">I will show you </h1>
-  <h1 className="text-[25px] font-bold md:ml-auto">how our team works</h1>
+  <h1 className="text-[25px] font-bold md:ml-auto text-gray-800 ">I will show you </h1>
+  <h1 className="text-[25px] font-bold md:ml-auto text-gray-800 ">how our team works</h1>
 </div>
 <div className="md:ml-auto flex flex-wrap text-base justify-center">
 <p className="text-gray-500 text-[14px] mt-2 px-6 text-center ">
@@ -51,7 +51,7 @@ Bring to the table win-win market strategies to ensure perfect articles.
     <h1 className="text-[19px] leading-8 text-[#7C4EE4] font-bold group-hover:text-gray-100 transition-colors duration-300">
       Brainstorming
     </h1>
-    <p className="text-[12px] mt-3 text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+    <p className="text-[12px] mt-3 text-gray-500 group-hover:text-gray-300 transition-colors duration-300">
       Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated
     </p>
     <p className="text-[15px] mt-5 font-bold text-gray-400 underline group-hover:text-gray-100 transition-colors duration-300">
@@ -67,7 +67,7 @@ Bring to the table win-win market strategies to ensure perfect articles.
     <h1 className="text-[19px] leading-8 text-[#7C4EE4] font-bold group-hover:text-gray-100 transition-colors duration-300">
     Analysing
     </h1>
-    <p className="text-[12px] mt-3 text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+    <p className="text-[12px] mt-3 text-gray-500 group-hover:text-gray-300 transition-colors duration-300">
     Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line solely on the bottom line.
     </p>
     <p className="text-[15px] mt-5 font-bold text-gray-400 underline group-hover:text-gray-100 transition-colors duration-300">
@@ -83,7 +83,7 @@ Bring to the table win-win market strategies to ensure perfect articles.
     <h1 className="text-[19px] leading-8 text-[#7C4EE4] font-bold group-hover:text-gray-100 transition-colors duration-300">
     News Publishing
     </h1>
-    <p className="text-[12px] mt-3 text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+    <p className="text-[12px] mt-3 text-gray-500 group-hover:text-gray-300 transition-colors duration-300">
     Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
     </p>
     <p className="text-[15px] mt-5 font-bold text-gray-400 underline group-hover:text-gray-100 transition-colors duration-300">

@@ -61,7 +61,7 @@ const BlogPost = ({ params }: { params: { content: string } }) => {
           <div className="max-w-5xl mx-auto space-y-6">
             <div className="w-full mx-auto">
               <div className="p-10">
-                <div className="w-full h-auto object-cover object-center rounded">
+                <div className="w-full h-auto text-gray-900 object-cover object-center rounded">
                   <h1 className="text-[30px] text-gray-900 p-2 text-center font-bold">
                     {postData ? postData.title : ""}
                     How to make a Game look more attractive with New VR & AI{" "}
@@ -84,7 +84,7 @@ const BlogPost = ({ params }: { params: { content: string } }) => {
                   />
                 </div>
                 <div className="w-full">
-                  <div className="flex flex-wrap gap-8 p-3 justify-start">
+                  <div className="flex flex-wrap  gap-8 p-3 justify-start">
                     <h2 className="text-[18px] text-[#7C4EE4] font-medium">
                       Development
                     </h2>
