@@ -10,7 +10,7 @@ const blogPosts = [
       "Choosing between a train or bus journey depends on distance, time, cost, and preferences. Both have unique advantages, so pick what fits your travel needs best.",
     content: "Travel",
     date: "13 March 2023",
-    image: "/images/train.png",
+    Image: "/images/train.png",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const blogPosts = [
       "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs ",
     content: "Development",
     date: "11 March 2023",
-    image: "/images/laptop.png",
+    Image: "/images/laptop.png",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const blogPosts = [
       "Becoming a dancer in 2023 requires passion, discipline, and skill development. Focus on learning and maintaining a growth mindset to succeed. Here a quick guide:",
     content: "Sports",
     date: "10 March 2023",
-    image: "/images/human.png",
+    Image: "/images/human.png",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const blogPosts = [
       "Olivia Rodrigo, known for her emotional ballads and powerful vocals, has dominated the charts since drivers license with her mix of pop, indie, and alternative sounds.",
     content: "Travel",
     date: "13 March 2023",
-    image: "/images/human2.png",
+    Image: "/images/human2.png",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const blogPosts = [
       "Starting an export-import business from home offers global opportunities and profitable income. With digital tools, you can efficiently manage this business without stepping out. Here a step-by-step guide to help you begin.",
     content: "Development",
     date: "13 March 2023",
-    image: "/images/human3.png",
+    Image: "/images/human3.png",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const blogPosts = [
       "Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive",
     content: "Sports",
     date: "14 March 2023",
-    image: "/images/chocolate.png",
+    Image: "/images/chocolate.png",
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const blogPosts = [
       "Break free from procrastination and take charge of your time! Discover practical tips to build focus, overcome delays, and achieve your goals with greater efficiency.",
     content: "Travel",
     date: "11 March 2023",
-    image: "/images/tree.png",
+    Image: "/images/tree.png",
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ const blogPosts = [
       "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from ",
     content: "Development",
     date: "13 March 2023",
-    image: "/images/pc.png",
+    Image: "/images/pc.png",
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ const blogPosts = [
       "Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive",
     content: "Sports",
     date: "16 March 2023",
-    image: "/images/ball.png",
+    Image: "/images/ball.png",
   },
 ];
 
@@ -120,7 +120,7 @@ export default function BlogsPage() {
                     className="bg-[#E2E2E2] rounded-lg shadow-xl w-full md:w-80"
                   >
                     <Image
-                      src={post.image}
+                      src={post.Image}
                       alt={post.title}
                       width={800}
                       height={800}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 type PostData = {
@@ -15,14 +15,13 @@ type Comment = {
 
 const BlogPost = ({ params }: { params: { content: string } }) => {
   const [postData, setPostData] = useState<PostData | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  // const [setIsLoading] = useState<boolean>(false);
   const [isContentVisible, setIsContentVisible] = useState<boolean>(false);
   const [comments, setComments] = useState<Comment[]>([]);
   const [commentText, setCommentText] = useState<string>("");
 
   const fetchData = async () => {
     try {
-      setIsLoading(true);
       console.log("Fetching data for title:", params.content);
       const res = await fetch(
         `https://jsonplaceholder.typicode.com/posts?title=${params.content}`
@@ -36,8 +35,6 @@ const BlogPost = ({ params }: { params: { content: string } }) => {
       }
     } catch (error) {
       console.error("Error fetching data:", error);
-    } finally {
-      setIsLoading(false);
     }
   };
 

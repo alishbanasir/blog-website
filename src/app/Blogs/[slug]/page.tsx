@@ -1,10 +1,12 @@
 "use client"
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useState } from "react"; 
 
+
 type ContentSection =
   | { type: "paragraph"; text: string }
-  | { type: "image"; src: string; alt: string }
+  | { type: "Image"; src: string; alt: string }
   | {
       type: "list";
       items: {
@@ -33,7 +35,7 @@ const blogPosts: BlogPost[] = [
         text: "The choice between a train or bus journey depends on factors like distance, time, cost, and personal preferences. Trains and buses offer unique advantages, such as comfort, affordability, or flexibility, and the best option varies based on the nature of your trip. Here a quick comparison to help you decide:",
       },
       {
-        type: "image",
+        type: "Image",
         src: "/images/train.png",
         alt: "train",
       },
@@ -111,7 +113,7 @@ const blogPosts: BlogPost[] = [
       text: "Capitalize on opportunities to identify valuable activities and test innovative ideas. Bridge gaps with efficient tools and resources. Finding the right platforms for project research can save time and improve results. Here are some top websites to help you with your next project:",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/laptop.png ",
       alt: "laptop",
     },
@@ -195,7 +197,7 @@ const blogPosts: BlogPost[] = [
       text: "Becoming a dancer in 2023 requires a blend of passion, discipline, and skill development. Whether you aim to perform professionally or pursue dance as a personal passion, the steps to success involve learning the right techniques, networking, and maintaining a growth mindset. Here a guide to help you on your journey to becoming a skilled dancer:",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/human.png",
       alt: "human",
     },
@@ -277,7 +279,7 @@ const blogPosts: BlogPost[] = [
       text: "Olivia Rodrigo has quickly become one of the top singers today. Since her breakout hit drivers license, she has dominated the charts with her unique blend of pop, indie, and alternative rock. Her debut album SOUR was a huge success, with hits like Good 4 U and Deja Vu. Olivia emotional lyrics and powerful vocals connect deeply with listeners, and her follow-up album Guts further solidified her place in the music world.",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/human2.png",
       alt: "human2",
     },
@@ -325,7 +327,7 @@ const blogPosts: BlogPost[] = [
       text: "Starting an export-import business from home is a rewarding opportunity to connect with global markets and earn a profitable income. Digital tools and platforms simplify managing every aspect of the business from home, from market research to logistics. With flexibility and efficiency, you can thrive in this venture. Follow this guide to start your journey into international trade and grow step by step.",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/human3.png",
       alt: "human3",
     },
@@ -417,7 +419,7 @@ const blogPosts: BlogPost[] = [
       text: "Capitalize on opportunities to identify valuable activities and test innovative ideas. Bridge gaps with efficient tools and resources. Finding the right platforms for project research can save time and improve results. Here are some top websites to help you with your next project:",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/chocolate.png",
       alt: "chocolate",
     },
@@ -501,7 +503,7 @@ const blogPosts: BlogPost[] = [
       text: "Capitalize on opportunities to identify valuable activities and test innovative ideas. Bridge gaps with efficient tools and resources. Finding the right platforms for project research can save time and improve results. Here are some top websites to help you with your next project:",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/tree.png",
       alt: "tree",
     },
@@ -585,7 +587,7 @@ const blogPosts: BlogPost[] = [
       text: "Capitalize on opportunities to identify valuable activities and test innovative ideas. Bridge gaps with efficient tools and resources. Finding the right platforms for project research can save time and improve results. Here are some top websites to help you with your next project:",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/pc.png",
       alt: "website researching",
     },
@@ -669,7 +671,7 @@ const blogPosts: BlogPost[] = [
       text: "Capitalize on opportunities to identify valuable activities and test innovative ideas. Bridge gaps with efficient tools and resources. Finding the right platforms for project research can save time and improve results. Here are some top websites to help you with your next project:",
     },
     {
-      type: "image",
+      type: "Image",
       src: "/images/ball.png",
       alt: "ball",
     },
@@ -790,10 +792,10 @@ const handleCommentSubmit = () => {
                 {section.text}
               </p>
             );
-          case "image":
+          case "Image":
             return (
-              <img
-                key={index} 
+              <Image
+                key={index}
                 src={section.src}
                 alt={section.alt}
                 width={800}
